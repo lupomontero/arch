@@ -4,6 +4,12 @@
   "main": "index.js",
   "author": "Lupo Montero <lupomontero@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "pretest": "eslint src test",
+    "test": "jest --coverage",
+    "build": "webpack --mode=production",
+    "start": "webpack-dev-server --content-base dist/ --mode=development"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
