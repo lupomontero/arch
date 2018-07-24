@@ -1,3 +1,7 @@
 import Button from './Button';
 
-export default () => Button({ text: 'Sign in' });
+export default ({ disabled, onclick }) => Button({
+  text: 'Sign in',
+  disabled,
+  onclick,
+});

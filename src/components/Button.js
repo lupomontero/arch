@@ -1,5 +1,9 @@
 import createElement from '../lib/createElement';
 
-export default props => createElement('button', {
-  innerText: props.text,
-});
+export default ({ text, disabled, onclick }) => (
+  createElement('button', {
+    innerText: text,
+    disabled,
+    onclick,
+  })
+);
